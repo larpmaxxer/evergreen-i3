@@ -1,7 +1,7 @@
 # i3-wm-dotfiles
 
 my personal linux rice built around i3wm.  
-minimal, clean, and fast — no bloated desktop environment nonsense.
+no bloated desktop environment nonsense.
 
 ## 🧱 setup
 
@@ -25,7 +25,7 @@ minimal, clean, and fast — no bloated desktop environment nonsense.
 
 ## 🔨 needed packages
 ```
-sudo pacman -S --needed git kitty i3 polybar feh rofi i3
+sudo pacman -S --needed git kitty i3 polybar feh rofi
 ```
 
 ## ⚙️ installation
@@ -33,15 +33,8 @@ sudo pacman -S --needed git kitty i3 polybar feh rofi i3
 clone the repo:
 
 ```bash
-git clone https://github.com/larpmaxxer/i3-wm-dotfiles
-mkdir -p ~/.config/picom
-mkdir -p ~/.config/i3
-mkdir -p ~/.config/kitty
-mkdir -p ~/.config/polybar
-mkdir -p ~/.config/rofi
-cp ~/i3-wm-dotfiles/picom.conf ~/.config/picom/picom.conf
-cp ~/i3-wm-dotfiles/config ~/.config/i3/config
-cp ~/i3-wm-dotfiles/config.ini ~/.config/polybar/config.ini
-cp ~/i3-wm-dotfiles/config.rasi ~/.config/rofi/config.rasi
-cp ~/i3-wm-dotfiles/kitty.conf ~/.config/kitty/kitty.conf
+git clone https://github.com/you/i3-wm-dotfiles
+cd i3-wm-dotfiles
+chmod +x install.sh
+./install.sh
 ```
