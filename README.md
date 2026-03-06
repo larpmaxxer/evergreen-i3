@@ -30,7 +30,7 @@ sudo pacman -S --needed git kitty i3 polybar feh rofi
 
 ## ⚙️ installation
 
-clone the repo:
+clone the repo and simply run the install script
 
 ```bash
 git clone https://github.com/you/i3-wm-dotfiles
