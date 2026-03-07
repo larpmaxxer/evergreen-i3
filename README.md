@@ -1,5 +1,8 @@
 # i3-wm-dotfiles
 
+<img width="1366" height="768" alt="image" src="https://github.com/user-attachments/assets/fb0bc31d-916f-4c4e-8d52-7079f910b979" />
+
+
 my personal linux rice built around i3wm.  
 no bloated desktop environment nonsense.
 
