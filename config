@@ -1,6 +1,7 @@
-default_floating_border 2px
-
 set $mod Mod4
+
+default_border pixel 2
+default_floating_border pixel 2
 
 font pango:Jetbrains Mono
 
@@ -13,6 +14,10 @@ bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume @DEFAULT
 bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ -10% && $refresh_i3status
 bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute @DEFAULT_SINK@ toggle && $refresh_i3status
 bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOURCE@ toggle && $refresh_i3status
+bindsym F3 exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ +10%
+bindsym F2 exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ -10%
+bindsym F1 exec --no-startup-id pactl set-sink-mute @DEFAULT_SINK@ toggle
+bindsym Print exec --no-startup-id maim -s | tee ~/Pictures/screenshot-$(date +%Y%m%d-%H%M%S).png | xclip -selection clipboard -t image/png
 
 floating_modifier $mod
 
@@ -21,6 +26,7 @@ tiling_drag modifier titlebar
 exec_always --no-startup-id feh --bg-fill ~/i3-wm-dotfiles/wallpaper/wallpaper.jpg
 exec_always pkill i3bar
 exec_always polybar main
+exec_always --no-startup-id autotiling
 
 bindsym $mod+Return exec i3-sensible-terminal
 bindsym $mod+q kill
@@ -54,7 +60,6 @@ bindsym $mod+a focus parent
 gaps inner 15
 gaps outer 10
 
-default_border pixel 2
 client.focused          #888888  #888888    #ffffff  #888888   #888888
 client.unfocused        #555555  #555555    #aaaaaa  #555555   #555555
 client.focused_inactive #666666  #666666    #cccccc  #666666   #666666
@@ -102,13 +107,11 @@ mode "resize" {
         bindsym l resize shrink height 10 px or 10 ppt
         bindsym semicolon resize grow width 10 px or 10 ppt
 
-        # same bindings, but for the arrow keys
         bindsym Left resize shrink width 10 px or 10 ppt
         bindsym Down resize grow height 10 px or 10 ppt
         bindsym Up resize shrink height 10 px or 10 ppt
         bindsym Right resize grow width 10 px or 10 ppt
 
-        # back to normal: Enter or Escape or $mod+r
         bindsym Return mode "default"
         bindsym Escape mode "default"
         bindsym $mod+r mode "default"
