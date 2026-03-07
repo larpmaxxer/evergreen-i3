@@ -2,7 +2,7 @@
 
 echo installing packages...
 echo
-sudo pacman -S --needed git fish kitty i3 polybar feh rofi picom autotiling
+sudo pacman -S --needed git fish kitty i3 polybar feh rofi picom autotiling maim slop xclip
 
 mkdir -p ~/.config/{picom,i3,kitty,polybar,rofi}
 
