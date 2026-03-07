@@ -28,7 +28,7 @@ no bloated desktop environment nonsense.
 
 ## 🔨 needed packages (automatically installed during install script)
 ```
-sudo pacman -S --needed git kitty i3 polybar feh rofi maim slop xclip
+sudo pacman -S --needed git fish kitty i3 polybar feh rofi picom autotiling maim slop xclip
 ```
 
 ## ⚙️ installation
