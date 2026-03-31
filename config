@@ -17,13 +17,13 @@ bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOU
 bindsym F3 exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ +10%
 bindsym F2 exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ -10%
 bindsym F1 exec --no-startup-id pactl set-sink-mute @DEFAULT_SINK@ toggle
-bindsym Print exec --no-startup-id maim -s | tee ~/Pictures/screenshot-$(date +%Y%m%d-%H%M%S).png | xclip -selection clipboard -t image/png
+bindsym F4 exec --no-startup-id maim -s | tee ~/Pictures/screenshot-$(date +%Y%m%d-%H%M%S).png | xclip -selection clipboard -t image/png
 
 floating_modifier $mod
 
 tiling_drag modifier titlebar
 
-exec_always --no-startup-id feh --bg-fill ~/blackframe/nothing.png
+exec_always --no-startup-id feh --bg-fill ~/mountaingreen.jpg
 exec_always pkill i3bar
 exec_always polybar main
 exec_always --no-startup-id autotiling
