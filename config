@@ -22,7 +22,7 @@ floating_modifier $mod
 
 tiling_drag modifier titlebar
 
-exec_always --no-startup-id feh --bg-fill ~/tsunami.jpg
+exec_always --no-startup-id feh --bg-fill ~/i3conf/tsunami.jpg
 exec_always pkill i3bar
 exec_always polybar main
 exec_always --no-startup-id autotiling
