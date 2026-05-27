@@ -16,7 +16,7 @@ no bloated desktop environment nonsense.
 
 ## 📂 structure
 ```
-~/i3-wm-dotfiles/
+~/i3conf/
 ├── i3 (i3 window manager config)
 ├── picom.conf (picom compositor config for transparency and rounded windows) 
 ├── config.ini (polybar config)
