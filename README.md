@@ -1,5 +1,6 @@
 # i3conf
 <img width="1366" height="768" alt="image" src="https://github.com/user-attachments/assets/6a8299ca-9e0f-47e3-b65b-96e2811e0f52" />
+[neofetch, cmatrix, cbonsai, cava]
 
 my personal linux rice built around i3wm.  
 no bloated desktop environment nonsense.
