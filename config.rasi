@@ -1,10 +1,10 @@
 * {
-    bg:             #102235;
-    fg:             #D6E4F0;
-    accent:         #3A6EA5;
-    accent-light:   #4F8CC9;
-    sel-bg:         #FFFFFF;
-    sel-fg:         #102235;
+    bg:             #000000;
+    fg:             #ffffff;
+    accent:         #3A3636;
+    accent-light:   #363636;
+    sel-bg:         #ffffff;
+    sel-fg:         #363636;
     transparent:    #00000000;
 
     background-color: @transparent;
